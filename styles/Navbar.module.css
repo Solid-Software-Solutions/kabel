@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #AAAAAA;
+    padding: 0 35px;
+}
+.container h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+.container ul{
+    display: flex;
+    list-style: none;
+}
+
+.container ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.container .icon{
+    height: 18px;
+}
