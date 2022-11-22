@@ -12,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <h1>Tienda en linea Joyeria Kable</h1>
+      <div className={styles.content}>
+        <h1>Tienda en linea Joyeria Kabel</h1>
+      </div>
       <Footer />
     </div>
   )
