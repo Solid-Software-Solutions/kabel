@@ -6,7 +6,7 @@
     border-bottom: 1px solid #AAAAAA;
     padding: 0 35px;
 }
-.container h1{
+.container .logo{
     font-weight: 400;
     font-size: 40px;
 }
@@ -15,7 +15,7 @@
     list-style: none;
 }
 
-.container ul li{
+.container ul li a{
     display: flex;
     flex-direction: column;
     margin: 0 30px;
