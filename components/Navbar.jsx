@@ -28,7 +28,7 @@ export default function Navbar(){
                     </Link>
                 </li>
                 <li>
-                    <Link href="/cuenta">
+                    <Link href="/account">
                         <FontAwesomeIcon icon={faUser} className={styles.icon}/>
                         <p>cuenta</p>
                     </Link>
