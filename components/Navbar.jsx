@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Navbar.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faHeart, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
@@ -5,23 +6,32 @@ import { faMagnifyingGlass, faHeart, faUser, faCartShopping } from '@fortawesome
 export default function Navbar(){
     return(
         <div className={styles.container}>
-            <h1>Kabel</h1>
+            <Link href="/" className={styles.logo}>Kabel</Link>
             <ul>
+                
                 <li>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.icon}/>
-                    <p>Buscar</p>
+                    <a href="#">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.icon}/>
+                        <p>Buscar</p>
+                    </a>
                 </li>
                 <li>
-                    <FontAwesomeIcon icon={faHeart} className={styles.icon}/>
-                    <p>Buscar</p>
+                    <Link href="/favoritos">
+                        <FontAwesomeIcon icon={faHeart} className={styles.icon}/>
+                        <p>Favoritos</p>
+                    </Link>
                 </li>
                 <li>
-                    <FontAwesomeIcon icon={faCartShopping} className={styles.icon}/>
-                    <p>Buscar</p>
+                    <Link href="/carrito">
+                        <FontAwesomeIcon icon={faCartShopping} className={styles.icon}/>
+                        <p>Carrito</p>
+                    </Link>
                 </li>
                 <li>
-                    <FontAwesomeIcon icon={faUser} className={styles.icon}/>
-                    <p>Buscar</p>
+                    <Link href="/cuenta">
+                        <FontAwesomeIcon icon={faUser} className={styles.icon}/>
+                        <p>cuenta</p>
+                    </Link>
                 </li>
             </ul>
         </div>
