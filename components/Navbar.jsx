@@ -16,7 +16,7 @@ export default function Navbar(){
                     </a>
                 </li>
                 <li>
-                    <Link href="/favoritos">
+                    <Link href="/favorites">
                         <FontAwesomeIcon icon={faHeart} className={styles.icon}/>
                         <p>Favoritos</p>
                     </Link>
