@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Login.module.css'
 import Footer from '../components/Footer.jsx'
 import Navbar from '../components/Navbar.jsx'
+import React, {useState } from 'react';
+import LoginForm from '../components/Loginform.jsx'
 
 export default function login() {
   return (
@@ -12,7 +14,7 @@ export default function login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.content}>
-        <h1>Login</h1>
+        <LoginForm/>
       </div>
     </div>
   )
