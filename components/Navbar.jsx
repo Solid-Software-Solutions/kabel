@@ -22,7 +22,7 @@ export default function Navbar(){
                     </Link>
                 </li>
                 <li>
-                    <Link href="/carrito">
+                    <Link href="/cart">
                         <FontAwesomeIcon icon={faCartShopping} className={styles.icon}/>
                         <p>Carrito</p>
                     </Link>
