@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Register.module.css'
 import Footer from '../components/Footer.jsx'
 import Navbar from '../components/Navbar.jsx'
+import Registerform from '../components/Registerform.jsx'
 
 export default function register() {
   return (
@@ -12,7 +13,7 @@ export default function register() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.content}>
-        <h1>Sign In</h1>
+        <Registerform/>
       </div>
     </div>
   )
